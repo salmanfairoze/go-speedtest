@@ -4,5 +4,4 @@
 vendor/
 bin/
 .out/
-.build/
 *.out
