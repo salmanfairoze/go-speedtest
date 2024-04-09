@@ -1,0 +1,6 @@
+CMD_DIR := cmd
+BIN_DIR := .build
+CMD_DIRS := $(call wildcard,$(CMD_DIR)/*)
+BINARIES := $(CMD_DIRS:$(CMD_DIR)/%=$(BIN_DIR)/%)
+SOURCES := $(shell find . -iname '*.go')
+MOD_DEP := go.mod go.sum
